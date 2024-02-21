@@ -1,0 +1,15 @@
+[Unit]
+
+Description=Configure Network
+Before=systemd-networkd.service
+  
+[Service]
+
+ExecStart=/usr/local/bin/initial-network-config.sh
+
+
+[Install]
+
+WantedBy=multi-user.target
+
+

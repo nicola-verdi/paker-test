@@ -1,0 +1,16 @@
+[Unit]
+
+Description=Configure Telegraf
+After=network-online.target
+Before=telegraf.service
+  
+[Service]
+
+ExecStart=/usr/local/bin/telegraf_config.sh
+
+
+[Install]
+
+WantedBy=multi-user.target
+
+

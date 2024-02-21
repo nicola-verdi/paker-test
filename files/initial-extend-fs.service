@@ -1,0 +1,15 @@
+[Unit]
+
+Description=Extend root Filesystem
+Before=systemd-networkd.service
+  
+[Service]
+
+ExecStart=/usr/local/bin/initial-extend-fs.sh
+
+
+[Install]
+
+WantedBy=multi-user.target
+
+
